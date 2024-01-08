@@ -1,0 +1,291 @@
+{
+	"info": {
+		"_postman_id": "b6d2c679-38fe-4e24-8e1c-50b10d729b2e",
+		"name": "challenge_abitmedia_app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16345546",
+		"_collection_link": "https://devcloudec.postman.co/workspace/My-Workspace~e05818fb-94bb-4c32-80ca-4e2b120154fd/collection/16345546-b6d2c679-38fe-4e24-8e1c-50b10d729b2e?action=share&source=collection_link&creator=16345546"
+	},
+	"item": [
+		{
+			"name": "Servicios",
+			"item": [
+				{
+					"name": "Guardar Servicio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sku\": \"UxApGwnJ6e\",\r\n    \"description\": \"Hora de soporte en software\",\r\n    \"price\": 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/v1/services/saveService",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"v1",
+								"services",
+								"saveService"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Servicio por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/v1/services/getService/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"v1",
+								"services",
+								"getService",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Servicios registrados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/v1/services/servicesList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"v1",
+								"services",
+								"servicesList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Servicio",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"sku\": \"vDLP1fjVWo\",\r\n    \"description\": \"Formateo y revisión de computadores\",\r\n    \"price\": \"30\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/v1/services/updateService",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"v1",
+								"services",
+								"updateService"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Servicio",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/v1/services/deleteService/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"v1",
+								"services",
+								"deleteService",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Software",
+			"item": [
+				{
+					"name": "Guardar Licencia",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sku\": \"R3tAIuTU0J\",\r\n    \"type\": \"Ofimática\",\r\n    \"os\": 1,\r\n    \"price\": 10,\r\n    \"stock\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/v1/software/saveLicense",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"v1",
+								"software",
+								"saveLicense"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Licencias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/v1/software/licenseList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"v1",
+								"software",
+								"licenseList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Licencia por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/v1/software/getLicense/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"v1",
+								"software",
+								"getLicense",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Licencia",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"sku\": \"dg83mhY5e0\",\r\n    \"type\": \"Editor de video\",\r\n    \"os\": 3,\r\n    \"price\": 15,\r\n    \"stock\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/v1/software/updateLicense",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"v1",
+								"software",
+								"updateLicense"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Licencia",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/v1/software/deleteLicense/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"v1",
+								"software",
+								"deleteLicense",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ver Sistemas Operativos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/v1/os",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"os"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
